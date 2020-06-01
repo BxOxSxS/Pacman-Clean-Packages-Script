@@ -17,6 +17,7 @@ do
      case $yn in
           [Ss]* ) n2=${n};;
           [Cc]* ) exit ;;
+          [Ii]* ) pacman  -Q --info ${pkg[${n2}]} && n2=$((n2-1)) ;;
           [Yy]* ) echo ${pkg[${n2}]} >> $fc ;n3=$((n3+1));;
           [Nn]* ) ;;
           * ) echo "Please answer yes or no"; n2=$((n2-1)) ;;
