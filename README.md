@@ -7,5 +7,6 @@ After starting script it will ask you one-by-one what to do with package
 * Use `n` to do not remove package
 * Use `c` to cancel script
 * Use `s` to skip next packages
+* Use `i` to display information about the package using pacman
 
 After selecting script will tell you how many packages you have chosen and call pacman with sudo to remove packages, you can cancel that action
