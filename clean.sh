@@ -1,8 +1,8 @@
 #!/bin/sh
 f=.pkg
 fc=.cpkg
-rm $f
-rm $fc
+rm -f $f
+rm -f $fc
 pacman -Qdtq > $f
 n=1
 while IFS= read -r line; do
@@ -24,5 +24,5 @@ do
 done
 echo "Number of selected packages: $n3/$n"
 sudo pacman -R - < $fc
-rm $f
-rm $fc
+rm -f $f
+rm -f $fc
