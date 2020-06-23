@@ -4,6 +4,12 @@ fc=.cpkg
 rm -f $f
 rm -f $fc
 pacman -Qdtq > $f
+echo 'Use `y` to select the package to be removed'
+echo 'Use `n` to do not remove package'
+echo 'Use `c` to cancel script'
+echo 'Use `s` to skip next packages'
+echo 'Use `i` to display information about the package using pacman'
+echo
 n=1
 while IFS= read -r line; do
      pkg[$n]=$line
